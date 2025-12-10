@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class HandOffsetHandler : MonoBehaviour
 {
     [SerializeField] private InputActionProperty headPosition;
