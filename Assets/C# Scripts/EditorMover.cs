@@ -1,6 +1,7 @@
 #if UNITY_EDITOR
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public class EditorMover : MonoBehaviour
@@ -12,7 +13,7 @@ public class EditorMover : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    private void Update()
+    public void OnLeftClick()
     {
         if (Input.GetMouseButton(0))
         {
